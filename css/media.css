@@ -1,0 +1,384 @@
+@media (max-width: 1000.98px) {
+    .mission {
+        padding: 100px 0px 100px 0px;
+    }
+    .mission__wrapper {
+        flex-direction: column-reverse;
+    }
+    .mission__images img {
+        position: static;
+        transform: none;
+        max-width: 310px;
+        height: 100%;
+        margin-top: 60px;
+    }
+    .mission__text {
+        width: 100%;
+        margin-right: auto;
+    }
+    .mission__text p {
+        width: 100%;
+    }
+    .works__content {
+        max-width: 435px;
+    }
+}
+@media (max-width: 870.98px) {
+    .works__wrapper {
+        min-height: 650px;
+    }
+    .works__app {
+        flex-direction: column;
+    }
+    .app__text {
+        margin-bottom: 34px;
+    }
+}
+@media (max-width: 840.98px) {
+    .works__content-text {
+        padding-left: 65px;
+    }
+    .works__content-text {
+        padding-left: 60px;
+    }
+    .works__content-text::after {
+        top: 22px;
+        left: -30px;
+        width: 135px;
+        transform: rotate(118deg);
+    }
+}
+@media (max-width: 814.98px) {
+    .scanner__wrapper {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .scanner__text, .code__text {
+        max-width: 100%;
+        margin-bottom: 50px;
+    }
+    .code, .scanner {
+        margin: 30px 0;
+    }
+    .code__wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    .works__content-text {
+        padding-left: 54px;
+    }
+    .mission {
+        padding: 100px 0px 10px 0px;
+    }
+}   
+@media (max-width: 768.98px) {
+    .works {
+        padding: 0px 0px 40px 0px;
+    }
+    .works__wrapper {
+        min-height: 600px;
+    }
+    .header {
+        padding: 10px 0px;
+    }
+    .header__container {
+        justify-content: space-between;
+        gap: 0px;
+    }
+    .header__login img {
+        display: none;
+    }
+    .works__content-text::before, .works__content-text::after {
+        display: none;
+    }
+    .works__content h1 {
+        font-size: calc(34px + (30 + 30 * 0.7) * ((100vw - 320px) / 1270));
+    }
+    .mission__text h2 {
+        font-size: 35px;
+    }
+    .mission__text h2::after {
+        top: 0;
+        left: 12px;
+    }
+    .works__content-text {
+        width: 300px;
+        font-size: 16px;
+        margin-top: 24px;
+        padding-left: 0;
+    }
+    .mission__text p {
+        font-size: 16px;
+    }
+    .works__images img {
+        width: 250px;
+        top: 90px;
+    }
+    .mission__images img {
+        display: block;
+        max-width: 250px;
+    }
+    .works__images::after {
+        width: 290px;
+        height: 300px;
+        top: 130px;
+        right: 50px;
+    }
+    .works__app {
+        margin-top: 60px;
+    }
+    .app__text {
+        font-size: 24px;
+    }
+    .mission {
+        padding: 50px 0px 50px 0px;
+    }
+    .scanner__images img, .code__images img {
+        display: block;
+        width: 287px;
+    }
+    .scanner__text h3, .code__text h3 {
+        font-size: 40px;
+    }
+    .scanner__text p, .code__text p {
+        font-size: 16px;
+    }
+    .scanner, .code {
+        background: none;
+        margin: 40px 0;
+    }
+    .scanner::before {
+        content: "";
+        display: block;
+        height: 300px;
+        margin-bottom: -105px;
+        background: linear-gradient(180deg, #000000 -3%, rgba(0, 0, 0, 0) 57%, #000000 84%), url(../img/scanner/louis-hansel-shotsoflouis-unsplash.png);
+        background-size: cover;
+        background-position: center;
+    }
+    .code::before {
+        content: "";
+        display: block;
+        height: 335px;
+        margin-bottom: -105px;
+        background: linear-gradient(180deg, #000000 -3%, rgba(0, 0, 0, 0) 57%, #000000 84%), url(../img/code/marcela-laskoski-unsplash.png);
+        background-size: cover;
+        background-position: center;
+    }
+    .download__wrapper {
+        padding: 10px 0px 20px 0px;
+    }
+    .footer__wrapper {
+        padding: 50px 0px 10px 0px;
+    }
+}
+@media (max-width: 695.98px) {
+    .download__buttons {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 24px;
+    }
+    .footer__wrapper {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 50px;
+    }
+}
+@media (max-width: 675.98px) {
+    .works__images img {
+        width: 250px;
+        height: 475px;
+        top: 90px;
+        right: 15px;
+    }
+}
+@media (max-width: 578.98px) {
+    .works__images img {
+        width: 230px;
+        height: 440px;
+        top: 90px;
+        right: 0px;
+    }
+    .works__content-text {
+        width: 230px;
+        font-size: 14px;
+        margin-top: 24px;
+        padding-left: 0;
+    }
+    .works__images::after {
+        top: 85px;
+        right: 30px;
+    }
+    .works__app {
+        margin-top: 0px;
+    }
+    .mission {
+        padding: 35px 0px 35px 0px;
+    }
+    .scanner__text h3, .code__text h3 {
+        font-size: 35px;
+    }
+}
+@media (max-width: 490.98px) {
+    .header__logo img {
+        width: 60%;
+    }
+    .works__images img {
+        right: -90px;
+    }
+    .works__images::after {
+        right: -85px;
+    }
+    .app__text {
+        margin-bottom: 24px;
+    }
+    .app__buttons {
+        flex-direction: column;
+        gap: 24px;
+    }
+    .mission__text h2 {
+        font-size: 30px;
+    }
+    .mission {
+        padding: 20px 0px 25px 0px;
+    }
+    .scanner__text h3, .code__text h3 {
+        font-size: 30px;
+    }  
+}
+@media (max-width: 425.98px) {
+    .works__wrapper {
+        min-height: 530px;
+    }
+    .works__images img {
+        width: 230px;
+        height: 440px;
+        top: 45px;
+    }
+    .works__content h1 {
+        width: 240px;
+    }
+    .button-store img, .button-google img {
+        max-width: 160px;
+    }
+    .code__wrapper {
+        padding: 20px 0;
+    }
+    .footer__wrapper {
+        padding: 25px 0px 10px 0px;
+        gap: 25px;
+    }
+    .footer__text::after {
+        top: -75px;
+        left: -5px;
+        width: 250px;
+        height: 210px;
+    }
+}
+@media (max-width: 400.98px) {
+    .works__wrapper {
+        min-height: 490px;
+    }
+    .works__images img {
+        width: 220px;
+        height: 410px;
+        top: 45px;
+        right: -100px;
+    }
+    .app__text {
+        margin-bottom: 16px;
+    }
+    .app__text {
+        font-size: 22px;
+    }
+}
+@media (max-width: 375.98px) {
+    .header__logo img {
+        width: 70%;
+        margin-right: -28px;
+    }
+    .login {
+        font-size: 14px;
+    }
+    .works__wrapper {
+        min-height: 470px;
+    }
+    .works__content-text {
+        font-size: 15px;
+        margin-top: 12px;
+    }
+    .works__images img {
+        width: 215px;
+        height: 390px;
+        right: -118px;
+    }
+    .app__text {
+        font-size: 20px;
+    }
+    .works__images::after {
+        width: 265px;
+        height: 268px;
+        top: 50px;
+        right: -120px;
+    }
+    .button-store img, .button-google img {
+        max-width: 145px;
+    }
+    .app__buttons {
+        gap: 20px;
+    }
+    .mission__text h2 {
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+    .mission__text p {
+        font-size: 14px;
+    }
+    .mission__images img {
+        margin-top: 45px;
+    }
+    .mission__text h2::after {
+        width: 60px;
+        height: 60px;
+    }
+    .scanner__wrapper, .code__wrapper {
+        padding: 30px 0;
+    }
+    .scanner__text h3, .code__text h3 {
+        font-size: 26px;
+    }
+    .scanner__text p, .code__text p {
+        font-size: 14px;
+    }
+    .scanner__images img, .code__images img {
+        display: block;
+        width: 240px;
+    }
+    .footer__wrapper {
+        padding: 50px 0px 10px 0px;
+    } 
+}
+@media (max-width: 320.98px) {
+    .works__wrapper {
+        min-height: 455px;
+    }
+    .works__images img {
+        width: 210px;
+        height: 380px;
+        right: -140px;
+    }
+    .works__content-text {
+        width: 215px;
+        font-size: 14px;
+    }
+    .mission__text p {
+        width: 285px;
+    }
+    .footer__wrapper {
+        padding: 20px 0px 10px 0px;
+        gap: 28px;
+    } 
+}

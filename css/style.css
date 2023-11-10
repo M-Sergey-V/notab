@@ -1,0 +1,321 @@
+/* --------- Google Fonts -------- */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Noto+Sans:wght@400;500;700&display=swap');
+/* ------- Базовые обнуление стилей ------ */
+*,
+*::before,
+*::after {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+ul, ol, li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    opacity: 0.8;
+}
+/* ------- Начало вёрстки ------- */
+body {
+    background-color: #000;
+    color: #fff;
+    overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+.container {
+    width: 100%;
+    max-width: 1270px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+/* ------ HEADER ------ */
+.header {
+    padding: 15px 0;
+}
+.header__container {
+    display: flex;
+    align-items: center;
+    gap: 108px;
+}
+.header__logo {
+    display: flex;
+    align-items: center;
+}
+.header__logo img {
+    display: block;
+    width: 80%;
+}
+.header__login {
+    display: flex;
+    align-items: center;
+}
+.login {
+    margin-left: 12px;
+    color: #fff;
+}
+/* ------ WORKS ------ */
+.works {
+    padding: 40px 0px 0px 0px;
+}
+.works__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    min-height: 700px;
+}
+.works__content h1 {
+    font-size: 64px;
+    line-height: 91%;
+    font-size: calc(34px + 30 * (100vw / 1270)); /* 64/70 */
+}
+.works__content-text {
+    position: relative;
+    max-width: 480px;
+    font-family: 'Noto Sans';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 135%; /* 27/20 */
+    margin-top: 130px;
+    padding-left: 112px;
+}
+.works__content-text::after {
+    content: "";
+    position: absolute;
+    top: 22px;
+    left: 0;
+    width: 135px;
+    border: 2px solid #FFFFFF;
+    border-radius: 2px;
+    transform: rotate(120deg);
+}
+.works__content-text::before {
+    content: "";
+    position: absolute;
+    width: 125px;
+    height: 125px;
+    bottom: 25px;
+    left: 0;
+    background: rgba(96, 92, 234, 0.5);
+    filter: blur(50px);
+}
+.works__images img {
+    width: 332px;
+    position: absolute;
+    top: 0;
+    right: 30px;
+    z-index: -1;
+}
+.works__images::after {
+    content: "";
+    position: absolute;
+    width: 400px;
+    height: 500px;
+    top: 0;
+    right: 40px;
+    background: rgba(250, 0, 255, 0.2);
+    filter: blur(125px);
+    transform: rotate(-105.26deg);
+    z-index: -2;
+}
+.works__app {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 85px;
+}
+.app__text {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 200%; /* 70/35 */
+}
+.app__buttons {
+    display: flex;
+    gap: 28px;
+}
+.button-store img {
+    display: block;
+    max-width: 185px;
+}
+.button-google img {
+    display: block;
+    max-width: 185px;
+}
+/* ------ MISSION ------ */
+.mission {
+    padding: 120px 0px 128px 0px;
+    position: relative;
+}
+.mission__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.mission__images img {
+    position: absolute;
+    width: 370px;
+    height: 700px;
+    top: -60px;
+    left: 0;
+    transform: rotate(90deg);
+}
+.mission__text {
+    width: 420px;
+    position: relative;
+}
+.mission__text h2 {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 124%; /* 62/50 */
+    margin-bottom: 33px; /* 62/51 */
+}
+.mission__text h2::after {
+    content: "";
+    position: absolute;
+    width: 85px;
+    height: 85px;
+    top: 20px;
+    left: 10pt;
+    background: #F101BF;
+    opacity: 0.7;
+    filter: blur(50px);
+    z-index: -1;
+}
+.mission__text p {
+    width: 315px;
+    font-family: 'Noto Sans';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 138%; /* 25/18 */
+}
+/* ------ SCANNER ------ */
+.scanner {
+    background: linear-gradient(179deg, #000000 -3%, rgba(0, 0, 0, 0) 56%, #000000 84%), url(../img/scanner/louis.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 90px 0;
+}
+.scanner__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+.scanner__images {
+}
+.scanner__text {
+    max-width: 410px;
+    align-self: flex-end;
+}
+.scanner__text h3 {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 124%;
+    margin-bottom: 15px; /* 62/50 */
+}
+.scanner__text p {
+    font-family: 'Noto Sans';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 138%; /* 25/18 */
+}
+/* ------ CODE ------ */
+.code {
+    background: linear-gradient(179deg, #000000 -3%, rgba(0, 0, 0, 0) 56%, #000000 84%), url(../img/code/marcela.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 90px 0;
+}
+.code__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+.code__text {
+    max-width: 410px;
+    align-self: flex-end;
+}
+.code__text h3 {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 124%;
+    margin-bottom: 15px; /* 62/50 */
+}
+.code__text p {
+    font-family: 'Noto Sans';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 138%; /* 25/18 */
+}
+.code__images {
+}
+/* ------ DOWNLOAD ------ */
+.download {
+
+}
+.download__wrapper {
+    padding: 50px 0px 80px 0px;
+}
+.download__text {
+    text-align: center;
+    font-family: 'Noto Sans';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 137%; /* 33/24 */
+    letter-spacing: 0.03em;
+    margin-bottom: 32px;
+}
+.download__buttons {
+    display: flex;
+    justify-content: center;
+    gap: 59px;
+}
+.store {
+}
+.play {
+}
+/* ------ FOOTER ------ */
+.footer {
+}
+.footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 0;
+}
+.footer__text {
+    position: relative;
+}
+.footer__text::after {
+    content: "";
+    position: absolute;
+    top: -30px;
+    left: -60px;
+    width: 330px;
+    height: 275px;
+    background: linear-gradient(12deg, #F101BF 3%, #0066FF 97%);
+    opacity: 0.3;
+    filter: blur(125px);
+    transform: rotate(5deg);
+}
+.footer__text h4 {
+    font-size: 22px;
+}
+.footer__text p, .footer__privacy p {
+    font-family: 'Avenir';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 138%;
+    margin: 12px 0; /* 25/18 */
+}
+.footer__privacy {
+}
